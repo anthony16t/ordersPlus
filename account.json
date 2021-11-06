@@ -1,0 +1,14 @@
+{
+    "name": {
+        "type": "input",
+        "id": "s-name",
+        "label": "First Name",
+        "placeholder": "Name Here"
+    },
+    "last_name": {
+        "type": "input",
+        "id": "s-last_name",
+        "label": "Last Name",
+        "placeholder": "Last Name here"
+    }
+}

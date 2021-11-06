@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ordersP</title>
+        <link rel="stylesheet" href="/static/css/main.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    </head> 
+    <body>
+        <main>
+            <!-- left side -->
+            <div class="left">
+                <a href="/" class="logo-link"><img src="/static/images/website/shopify-logo.png" class="logo-img" alt="logo"></a>
+                <ul>
+                    <li><a href="/" class="left-link active"><span class="material-icons">dashboard</span>Dashboard</a></li>
+                    <li><a href="/pages/orders.html"  class="left-link"><span class="material-icons">view_list</span>Orders</a></li>
+                    <li><a href="/pages/settings.html" class="left-link"><span class="material-icons">settings</span>Settings</a></li>
+                    <li><a href="/pages/api.html" class="left-link"><span class="material-icons">description</span>Api Guide</a></li>
+                </ul>
+            </div>
+            <!-- right side -->
+            <div class="right">
+                <div class="main-header">
+                    <nav class="main-nav">
+                        <div class="search-box">
+                            <input type="text" placeholder="Search.." id="search">
+                            <span class="material-icons search-icon">search</span>
+                        </div>
+                        <div class="user">
+                            <img src="/static/images/website/elon.jpg" alt="user">
+                        </div>
+                    </nav>
+                </div>
+                <!-- search -->
+                <div id="search-result"></div>
+                <div id="app"></div>
+                <!-- dashboard static -->
+                <div class="orders-stats">
+                    <div class="stat" data-href="/orders/view/pending/">
+                        <div class="stat-number"><span>1</span></div>
+                        <div class="stat-name"><span>Pending Orders</span></div>
+                    </div>
+                    <div class="stat" data-href="/orders/view/completed/">
+                        <div class="stat-number"><span>4</span></div>
+                        <div class="stat-name"><span>Completed Orders</span></div>
+                    </div>
+                    <div class="stat" data-href="/orders/view/all/">
+                        <div class="stat-number"><span>10</span></div>
+                        <span class="stat-name">Total Orders</span>
+                    </div>
+                    <div class="stat" data-href="/orders/view/draft/">
+                        <div class="stat-number"><span>76</span></div>
+                        <div class="stat-name"><span>Draft Orders</span></div>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </main>
+        <script type="module" src="/static/js/main.js"></script>
+    </body>
+</html>

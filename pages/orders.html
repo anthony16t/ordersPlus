@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ordersP</title>
+        <link rel="stylesheet" href="/static/css/main.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    </head>
+    <body>
+        <main>
+            <!-- left side -->
+            <div class="left">
+                <a href="/" class="logo-link"><img src="/static/images/website/shopify-logo.png" class="logo-img" alt="logo"></a>
+                <ul>
+                    <li><a href="/" class="left-link active"><span class="material-icons">dashboard</span>Dashboard</a></li>
+                    <li><a href="/pages/orders.html"  class="left-link"><span class="material-icons">view_list</span>Orders</a></li>
+                    <li><a href="/pages/settings.html" class="left-link"><span class="material-icons">settings</span>Settings</a></li>
+                    <li><a href="/pages/api.html" class="left-link"><span class="material-icons">description</span>Api Guide</a></li>
+                </ul>
+            </div>
+            <!-- right side -->
+            <div class="right">
+                <!-- header nav -->
+                <div class="main-header">
+                    <nav class="main-nav">
+                        <div class="search-box">
+                            <input type="text" placeholder="Search.." id="search">
+                            <span class="material-icons search-icon">search</span>
+                        </div>
+                        <div class="user">
+                            <img src="/static/images/website/elon.jpg" alt="user">
+                        </div>
+                    </nav>
+                </div>
+                <!-- search result -->
+                <div id="search-result"></div>
+                <!-- title -->
+                <div class="title">
+                    <h2>Result: <span>New Orders</span></h2>
+                    <a href="/orders/view/all/" class="btn">View More</a>
+                </div>
+                <!-- orders -->
+                <div class="orders">
+                    <!-- order -->
+                    <div class="order" data-id="1">
+                        <div class="order-id">
+                            <div>ID</div>
+                            <div class="c-gray">1</div>
+                        </div>
+                        <div class="order-ref">
+                            <div>Ref</div>
+                            <img src="/static/images/website/shopify.png" alt="bootstrap">
+                        </div>
+                        <div class="order-status">
+                            <div>Status</div>
+                            <div class="completed">completed</div>
+                        </div>
+                        <div class="order-date">
+                            <div>Date</div>
+                            <div class="c-gray">2001-02-20</div>
+                        </div>
+                    </div>
+                    <!-- order -->
+                    <div class="order" data-id="2">
+                        <div class="order-id">
+                            <div>ID</div>
+                            <div class="c-gray">2</div>
+                        </div>
+                        <div class="order-ref">
+                            <div>Ref</div>
+                            <img src="/static/images/website/shopify.png" alt="bootstrap">
+                        </div>
+                        <div class="order-status">
+                            <div>Status</div>
+                            <div class="pending">pending</div>
+                        </div>
+                        <div class="order-date">
+                            <div>Date</div>
+                            <div class="c-gray">2001-02-20</div>
+                        </div>
+                    </div>
+                    <!-- order -->
+                    <div class="order" data-id="3">
+                        <div class="order-id">
+                            <div>ID</div>
+                            <div class="c-gray">3</div>
+                        </div>
+                        <div class="order-ref">
+                            <div>Ref</div>
+                            <img src="/static/images/website/shopify.png" alt="bootstrap">
+                        </div>
+                        <div class="order-status">
+                            <div>Status</div>
+                            <div class="completed">completed</div>
+                        </div>
+                        <div class="order-date">
+                            <div>Date</div>
+                            <div class="c-gray">2001-02-20e</div>
+                        </div>
+                    </div>
+                    <!-- order -->
+                    <div class="order" data-id="4">
+                        <div class="order-id">
+                            <div>ID</div>
+                            <div class="c-gray">4</div>
+                        </div>
+                        <div class="order-ref">
+                            <div>Ref</div>
+                            <img src="/static/images/website/shopify.png" alt="bootstrap">
+                        </div>
+                        <div class="order-status">
+                            <div>Status</div>
+                            <div class="completed">completed</div>
+                        </div>
+                        <div class="order-date">
+                            <div>Date</div>
+                            <div class="c-gray">2001-02-20e</div>
+                        </div>
+                    </div>
+                    <!-- order -->
+                    <div class="order" data-id="5">
+                        <div class="order-id">
+                            <div>ID</div>
+                            <div class="c-gray">5</div>
+                        </div>
+                        <div class="order-ref">
+                            <div>Ref</div>
+                            <img src="/static/images/website/shopify.png" alt="bootstrap">
+                        </div>
+                        <div class="order-status">
+                            <div>Status</div>
+                            <div class="completed">completed</div>
+                        </div>
+                        <div class="order-date">
+                            <div>Date</div>
+                            <div class="c-gray">2001-02-20e</div>
+                        </div>
+                    </div>
+                    <!-- order -->
+                    <div class="order" data-id="6">
+                        <div class="order-id">
+                            <div>ID</div>
+                            <div class="c-gray">6</div>
+                        </div>
+                        <div class="order-ref">
+                            <div>Ref</div>
+                            <img src="/static/images/website/shopify.png" alt="bootstrap">
+                        </div>
+                        <div class="order-status">
+                            <div>Status</div>
+                            <div class="pending">pending</div>
+                        </div>
+                        <div class="order-date">
+                            <div>Date</div>
+                            <div class="c-gray">2001-02-20</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script type="module" src="/static/js/main.js"></script>
+    </body>
+</html>
